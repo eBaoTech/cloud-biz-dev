@@ -1,0 +1,24 @@
+{
+  "name": "cloud-biz-dev",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "js-base64": "^2.4.3",
+    "mdi": "^2.2.43",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"
+  },
+  "homepage": "https://ebaotech.github.io/cloud-biz-dev",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
