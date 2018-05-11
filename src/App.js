@@ -102,12 +102,15 @@ class TenantDialog extends Dialog {
 	getTenantFormat() {
 		if (!TENANT_FORMAT) {
 			return fetch(
-				'https://raw.githubusercontent.com/eBaoTech/cloud-biz-dev/master/format.json',
+				'https://api.github.com/repos/eBaoTech/cloud-biz-dev/contents/format.json',
 				{
 					method: 'GET'
 				}
 			)
 				.then(response => response.json())
+				.then(json => {
+					return JSON.parse(Base64.decode(json.content.replace('\n', '')));
+				})
 				.then(json => {
 					TENANT_FORMAT = Object.keys(json)
 						.reduce((all, key) => {
