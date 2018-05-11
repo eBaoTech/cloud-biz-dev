@@ -25,10 +25,14 @@
 	},
 	"tag2": {
 		"label": "标签2",
-		"order": 5
+		"order": 6
 	},
 	"tag3": {
 		"label": "标签3",
-		"order": 5
+		"order": 7
+	},
+	"tag4": {
+		"label": "标签4",
+		"order": 8
 	}
 }
