@@ -7,6 +7,10 @@
 		"label": "类型",
 		"order": 2
 	},
+	"location": {
+		"label": "地址",
+		"order": 2.5
+	},
 	"contact": {
 		"label": "联系人",
 		"order": 3
