@@ -1,0 +1,10 @@
+{
+	"name": {
+		"label": "名称",
+		"order": 1
+	},
+	"type": {
+		"label": "类型",
+		"order": 2
+	}
+}
