@@ -72,7 +72,8 @@ class TenantDialog extends Dialog {
 						<div className="prop" key={index}>
 							<span>{prop.label}</span>
 							<input
-								type="text"
+								type={prop.type || 'text'}
+								style={prop.style}
 								ref={`val-${prop.id}`}
 								data-id={prop.id}
 								defaultValue={(this.props.tenant || {})[prop.id]}
