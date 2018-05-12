@@ -22,9 +22,6 @@
 	},
 	"tag1": {
 		"label": "标签1",
-		"style": {
-			"imeMode": "active"
-		},
 		"order": 5
 	},
 	"tag2": {
